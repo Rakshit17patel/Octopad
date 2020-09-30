@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+body{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    background: black;
+    font-family: 'Bad Script', cursive;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(61, 51, 155);
+    border: 5px solid grey;
+    border-radius: 15px; 
+    height:500px;
+    width:80%;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+.block {
+    height:90%;
+    width:90%;
+    margin:10px;
+    background: rgb(48, 47, 47);
+    border:2px solid transparent;
+    border-radius: 10px;
+}
+.block:hover {
+    height:90%;
+    width:90%;
+    margin:10px;
+    background: rgb(48, 47, 47);
+    border:2px solid yellowgreen;
+    border-radius: 10px;
+}
+.title{
+    display:block;
+}
+
+
+
+/* HEADing  */
+h1{
+    display:flex;
+    height:10vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bad Script', cursive;
+    font-size:6em;
+}
+
+h1 span
+{
+    display:table-cell;
+    margin: 0;
+    padding: 0;
+    animation:animate 2s linear infinite;
+
+}
+h1 span:nth-child(1)
+{
+    animation-delay: 0s ;
+}
+h1 span:nth-child(2)
+{
+    animation-delay: 0.2s ;
+}
+h1 span:nth-child(3)
+{
+    animation-delay: 0.4s ;
+}
+h1 span:nth-child(4)
+{
+    animation-delay: 0.6s ;
+}
+h1 span:nth-child(5)
+{
+    animation-delay: 0.8s ;
+}
+h1 span:nth-child(6)
+{
+    animation-delay: 1.0s ;
+}
+h1 span:nth-child(7)
+{
+    animation-delay: 1.2s ;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        color:#fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                     0 0 80px #00b3ff; 
+                    /* 0 0 120px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 300px #00b3ff,
+                    0 0 400px #00b3ff; */
+
+    }
+    5%,95%
+    {
+        color:#111;
+        filter: blur();
+        text-shadow: 0 0 10px none;
+    }
+
+}
